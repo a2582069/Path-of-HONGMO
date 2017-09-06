@@ -42,6 +42,7 @@ frm1 = Frame(mwindow,bg = 'yellow',height = 300)
 frm2 = Frame(mwindow,bg = 'green',height = 300)
 frm3 = Frame(mwindow,bg = 'blue',height = 200)
 frm4 = Frame(mwindow,height = 300)
+frm5 = Frame(mwindow,height = 300)
 def cmd1():
     enty1.delete(0,100)
     enty1.insert(0,get_price(html))
@@ -63,27 +64,43 @@ def cmd2():
     i = 0
     if entz1.get()!= '':
         i = i + float(entz1.get()) * float(enty1.get())
+        entyy1.delete(0, 100)
+        entyy1.insert(1, str(float(entz1.get()) * float(enty1.get())))
         print i
     if entz2.get()!= '':
         i = i + float(entz2.get()) * float(enty2.get())
+        entyy2.delete(0, 100)
+        entyy2.insert(1, str(float(entz2.get()) * float(enty2.get())))
         print i
     if entz3.get()!= '':
         i = i + float(entz3.get()) * float(enty3.get())
+        entyy3.delete(0, 100)
+        entyy3.insert(1, str(float(entz3.get()) * float(enty3.get())))
         print i
     if entz4.get()!= '':
         i = i + float(entz4.get()) * float(enty4.get())
+        entyy4.delete(0, 100)
+        entyy4.insert(1, str(float(entz4.get()) * float(enty4.get())))
         print i
     if entz5.get()!= '':
         i = i + float(entz5.get()) * float(enty5.get())
+        entyy5.delete(0, 100)
+        entyy5.insert(1, str(float(entz5.get()) * float(enty5.get())))
         print i
     if entz6.get()!= '':
         i = i + float(entz6.get()) * float(enty6.get())
+        entyy6.delete(0, 100)
+        entyy6.insert(1, str(float(entz6.get()) * float(enty6.get())))
         print i
     if entz7.get()!= '':
         i = i + float(entz7.get()) * float(enty7.get())
+        entyy7.delete(0, 100)
+        entyy7.insert(1, str(float(entz7.get()) * float(enty7.get())))
         print i
     if entz8.get()!= '':
         i = i + float(entz8.get()) * float(enty8.get())
+        entyy8.delete(0, 100)
+        entyy8.insert(1, str(float(entz8.get()) * float(enty8.get())))
         print i
     entex.delete(0,100)
     entex.insert(1,str(i))
@@ -106,6 +123,15 @@ enty5 = Entry(frm2,width = 7)
 enty6 = Entry(frm2,width = 7)
 enty7 = Entry(frm2,width = 7)
 enty8 = Entry(frm2,width = 7)
+
+entyy1 = Entry(frm5,width = 7)
+entyy2 = Entry(frm5,width = 7)
+entyy3 = Entry(frm5,width = 7)
+entyy4 = Entry(frm5,width = 7)
+entyy5 = Entry(frm5,width = 7)
+entyy6 = Entry(frm5,width = 7)
+entyy7 = Entry(frm5,width = 7)
+entyy8 = Entry(frm5,width = 7)
 
 lab1 = Label(frm4,text = 'Chaos')
 lab2 = Label(frm4,text = 'Ex')
@@ -137,6 +163,16 @@ enty5.place(x = 10,y = 140)
 enty6.place(x = 10,y = 170)
 enty7.place(x = 10,y = 200)
 enty8.place(x = 10,y = 230)
+
+entyy1.place(x = 10,y = 20)
+entyy2.place(x = 10,y = 50)
+entyy3.place(x = 10,y = 80)
+entyy4.place(x = 10,y = 110)
+entyy5.place(x = 10,y = 140)
+entyy6.place(x = 10,y = 170)
+entyy7.place(x = 10,y = 200)
+entyy8.place(x = 10,y = 230)
+
 lab1.place(x = 10,y = 20)
 lab2.place(x = 10,y = 50)
 lab3.place(x = 10,y = 80)
@@ -147,10 +183,11 @@ lab7.place(x = 10,y = 200)
 lab8.place(x = 10,y = 230)
 
 entex.place(x = 110,y = 80)
-frm1.place(width = 100,height = 300)
-frm2.place(x = 100,width = 100,height = 300)
+frm1.place(width = 75,height = 300)
+frm2.place(x = 75,width = 75,height = 300)
 frm3.place(x = 0,y = 300,width = 300,height = 300)
-frm4.place(x = 200,width = 100,height =300)
+frm5.place(x = 150,width = 75,height = 300)
+frm4.place(x = 225,width = 75,height =300)
 button1.place(x = 50,y = 30)
 button2.place(x = 200,y = 30)
 mwindow.mainloop()
